@@ -95,7 +95,7 @@ function Home() {
       )}
       {(hashtagResults.length > 0) && (
         <div className="posts-container">
-          <h3>Search Results:<button className="btn btn-danger" onClick={() => {setHashtagResults([]),setShowPostLists(true),setCurrentPage(1)}}>X</button></h3>
+          <button className="btn-back" onClick={() => {setSearchResults([]),setShowPostListsWithSearch(true),setCurrentPage(1)}}><i className="bi bi-chevron-compact-left text-center" ></i><p className="text-center">Back</p></button>
           <ul>
             {hashtagResults.map((result) => (
               <PostItem key={result._id} post={result} handleHashtags={handleHashtags}/>
