@@ -1,0 +1,43 @@
+  .changepassword-container form {
+    flex-direction: column;
+  }
+  
+  .changepassword-container label {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin: auto;
+  }
+  
+  .changepassword-container input {
+    display: flex;
+    width:50%;
+    justify-content: center;
+    padding: 8px;
+    margin-bottom: 15px !important;
+    margin: auto;
+    border-radius: 5px;
+  }
+  
+  .changepassword-container button {
+    width: 90%;
+    margin: 3px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    font-weight: 500;
+  }
+  
+  .changepassword-container button:hover {
+    background-color: rgb(214, 214, 214);
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    transform: scale(1.03);
+  }
+
+  .changepassword-container button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }

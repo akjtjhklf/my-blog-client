@@ -1,0 +1,39 @@
+.buttonswitch{
+    width: 100%;
+    margin: 0px 20px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    font-weight: 500;
+    background-color: antiquewhite;
+}
+.active{
+    background-color: rgb(213, 200, 182);
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    transform: scale(1.05);
+}
+.friend-container{
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
+    margin-bottom: 20px;
+    background-color: antiquewhite;
+}
+.card{
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
+    background-color: antiquewhite;
+}
+.title-item{
+    border-bottom: 5px solid;
+    padding-bottom: 10px;
+}
+.my-profile-container ul{
+    padding: 10px !important;
+}

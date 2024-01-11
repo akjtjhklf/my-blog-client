@@ -1,0 +1,52 @@
+.btn-close-search{
+    padding: 0px;
+    border-radius: 8px;
+    width: 30px;
+    height: 30px;
+    background-color: antiquewhite !important;
+    color: black;
+    font-size: 18px;
+    transition: box-shadow 0.15s ease ;
+    color: black;
+    &:hover{
+        box-shadow: 0 0px 12px rgba(0, 0, 0, 0.7);
+        color: black !important;
+        background-color: rgb(245, 234, 210) !important;
+        transform: scale(1.1) !important;
+    }
+    /* Bóng đổ khi active (được nhấn giữ) */
+    &:active {
+        background-color: white !important;
+        
+        color:  black !important;
+    }
+}
+.searchstate{
+    font-weight: 400;
+    font-size: 25px;
+}
+.btn-back{
+    display: flex;
+    width: 60px;
+    padding: 5px !important;
+    height: 35px;
+    margin-left: 16px;
+    text-align: center;
+    background-color: antiquewhite;
+    color: black;
+    border-radius: 8px;
+    transition: box-shadow 0.15s ease ;
+    color: black;
+    &:hover{
+        box-shadow: 0 0px 12px rgba(0, 0, 0, 0.7);
+        color: black !important;
+        background-color: rgb(245, 234, 210) !important;
+        transform: scale(1.1) !important;
+    }
+    /* Bóng đổ khi active (được nhấn giữ) */
+    &:active {
+        background-color: white !important;
+        
+        color:  black !important;
+    }
+}

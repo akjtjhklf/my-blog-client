@@ -1,0 +1,14 @@
+.pagination-item{
+    width: 60px;
+    background-color: antiquewhite !important;
+    border: none;
+    border-radius: 15px;
+    margin: 5px;
+    color: black;
+}
+.pagenation-content{
+    margin: 15px;
+    font-size: large;
+    font-weight: 500;
+
+}
