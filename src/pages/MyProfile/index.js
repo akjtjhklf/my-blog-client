@@ -31,7 +31,7 @@ function MyProfile() {
     );
     useEffect(()=>{
       updateUser()
-    },[user]);
+    },[user,data]);
     if (isLoading) {
       return <p>Loading...</p>;
     }
