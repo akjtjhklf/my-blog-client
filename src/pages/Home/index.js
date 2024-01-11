@@ -17,6 +17,7 @@ function Home() {
   const [currentPage, setCurrentPage] = useState(1);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [posts, setPosts] = useState([]);
+  const [totalPages,setTotalPages]=useState(1);
   const [isLoading,setIsLoading] = useState(true);
   const pageSize = 5;
   const {showPostLists, hashtagResults, handleHashtags,setHashtagResults,setShowPostLists} = useHashtags();
@@ -32,6 +33,7 @@ function Home() {
       try {
         const postResponse = await axios.get(`https://meowblog.onrender.com/posts?page=${currentPage}&pageSize=${pageSize}`);
         setPosts(postResponse.data.data);
+        setTotalPages(postResponse.data.totalPages)
         setIsLoading(false);
       } catch (error) {
         setIsLoading(false);
