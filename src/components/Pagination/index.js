@@ -21,7 +21,7 @@ const Pagination = ({page, pageSize, totalPages, onPageChange}) => {
           <button className="pagination-item" onClick={() => handlePageChange(page - 1)} disabled={isFirstPage}>
           <i className="bi bi-chevron-left"></i>
           </button>
-          <span className="pagenation-content">{page} - {pageSize}</span>
+          <span className="pagenation-content">{page} - {totalPages}</span>
           <button className="pagination-item" onClick={() => handlePageChange(page + 1)} disabled={isLastPage}>
           <i className="bi bi-chevron-right"></i>
           </button>
