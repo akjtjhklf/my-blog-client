@@ -85,7 +85,7 @@ function Home() {
           key={1}
           page={currentPage}
           pageSize={pageSize}
-          totalPages={posts.totalPages}
+          totalPages={totalPages}
           onPageChange={handlePageChange}/>
         </>
       )}
