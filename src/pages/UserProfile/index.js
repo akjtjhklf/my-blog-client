@@ -32,7 +32,7 @@ function UserProfile() {
     const fetchUserData = async () => {
       try {
         console.log("Fetching user data for ID:", userId);
-        const response = await axios.get(`http://meowblog.onrender.com/users/${userId}`);
+        const response = await axios.get(`https://meowblog.onrender.com/users/${userId}`);
         setUser(response.data.data);
         setUserDataLoaded(true);
       } catch (error) {
@@ -45,7 +45,7 @@ function UserProfile() {
 
   const { data, isLoading, error } = useQuery(
     ['posts', currentPage, curUser._id],
-    () => axios.get(`http://meowblog.onrender.com/posts/user/${curUser._id}?page=${currentPage}&pageSize=${pageSize}`)
+    () => axios.get(`https://meowblog.onrender.com/posts/user/${curUser._id}?page=${currentPage}&pageSize=${pageSize}`)
       .then((response) => response.data),
     { enabled: userDataLoaded } // Enable the query only when userDataLoaded is true
   );
